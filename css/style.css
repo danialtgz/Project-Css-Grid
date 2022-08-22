@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    direction: ltr;
+}
+.container{
+    width: 85%;
+    margin: 0px auto;
+}
+.slider{
+    background-image: linear-gradient(to top, #4d4c4c4f, #000000) , url('../images/pizza-g53d8f12b6_1920.jpg');
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center center;
+}
+.slider-content{
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    justify-content: center;
+    height: 90vh;
+    align-content: center;
+    text-align: center;
+    row-gap: 15px;
+}
+.slider-content h3{
+    color: white;
+    font-size: 30px;
+}
+.slider-content h2{
+    color: white;
+    font-size: 40px;
+}
+.slider-content span{
+    color: orange;
+    margin-right: 10px;
+}
+.slider-content button{
+    justify-self: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: orange;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all .7s;
+}
+.slider-content button:hover{
+    background-color: white;
+    color: orange;
+}
+
+/* * -------------Header Section---------*/
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  width: 100%;
+  background: transparent;
+  color: #000;
+  opacity: 0.85;
+  height: 100px;
+  z-index: 12;
+
+}
+.logo{
+    color: orange;
+    font-size: 25px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.logo:hover{
+  color: white;
+}
+.navbar-container {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, max-content);
+  height: 100px;
+  align-items: center;
+}
+.menu-items li {
+  list-style: none;
+  display: inline;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+    color: white;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: orange;
+  transition: color 0.3s ease-in-out;
+}
+.header-btn{
+  background-color: orange;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  font-weight: 400;
+  font-size: 15px;
+  transition: all 1s;
+}
+.header-btn:hover{
+  color: orange;
+  background-color: white;
+}
+.title{
+  text-align: center;
+  font-size: 30px;
+  margin:30px auto;
+  position: relative;
+}
+.title::after,
+.title::before{
+  content: '';
+  position: absolute;
+  background-color: orange;
+  width: 100px;
+  height: 3.5px;
+  top: 45px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.store-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  margin: 20px 0px;
+}
+.store-img-items{
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all .5s;
+  overflow: hidden;
+}
+.store-img-items img{
+  transition: .5s;
+  border-radius: 5px;
+}
+.store-img-items:hover img{
+  transform: scale(1.1);
+}
+.types{
+  background-color: #E3E1E0;
+  width: 100%;
+  height: 20vh;
+  margin: 50px 0px;
+}
+.types-group{
+  display: flex;
+  height: 20vh;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px;
+  overflow: scroll;
+}
+.types-items img{
+  width: 70px;
+  margin-right: 50px;
+  transition: all .5s;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+.types-items:hover img{
+  transform: scale(1.1);
+}
+.under-title{
+  font-size: 16px;
+  text-align: center;
+  color: #373737;
+  border-radius: 5px;
+  margin: 10px auto;
+}
