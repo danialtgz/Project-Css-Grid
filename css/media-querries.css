@@ -103,10 +103,39 @@
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
       transform: rotate(-35deg);
     }
+    .reserve-right-img{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, fr);
+    }
+    .reserve-right-img img{
+      width: 80px;
+    }
+    .reserve-left h4{
+      font-size: 14px;
+    }
+    .reserve-left p{
+      font-size: 13px;
+    }
   }
 
-    @media (max-width:1000px ) {
+    @media (max-width:992px ) {
       .header-btn{
         display: none;
+      }
+      .types-group{
+          overflow: scroll;
+      }
+      .types-items img{
+        width: 50px;
+      }
+    }
+
+    @media (max-width:768px  ){
+      .gallery-items{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 280px);
+        grid-template-areas: "g1 g1" "g2 g3" "g4 g3" "g5 g5";
+        padding: 30px 20px;
       }
     }
